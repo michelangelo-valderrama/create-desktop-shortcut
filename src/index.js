@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from 'node:fs'
 import path from 'node:path'
 import { Command, Option } from 'commander'
@@ -12,7 +14,7 @@ import {
 const program = new Command()
 
 program
-	.name('shortcut-creator')
+	.name('create-desktop-shortcut')
 	.description('CLI to create desktop shortcuts in Ubuntu')
 	.version('1.0.0')
 

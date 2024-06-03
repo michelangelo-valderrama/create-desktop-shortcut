@@ -2,6 +2,7 @@
 	"name": "create-desktop-shortcut",
 	"version": "1.0.0",
 	"description": "CLI to create desktop shortcuts in Ubuntu",
+	"repository": "https://github.com/michelangelo-valderrama/create-desktop-shortcut",
 	"main": "src/index.js",
 	"bin": "src/index.js",
 	"type": "module",
@@ -10,8 +11,11 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
-		"Ubuntu",
-		"Shortcut"
+		"cli",
+		"ubuntu",
+		"desktop shorcut",
+		"shortcut",
+		"desktop entry"
 	],
 	"author": "Michelangelo Valderrama Vivanco",
 	"license": "ISC",
