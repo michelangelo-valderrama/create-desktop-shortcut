@@ -13,7 +13,7 @@ const program = new Command()
 
 program
 	.name('shortcut-creator')
-	.description('CLI tool to create shortcuts for your Ubuntu application menu')
+	.description('CLI to create desktop shortcuts in Ubuntu')
 	.version('1.0.0')
 
 program

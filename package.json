@@ -1,7 +1,7 @@
 {
-	"name": "shortcut-creator",
+	"name": "create-desktop-shortcut",
 	"version": "1.0.0",
-	"description": "A creator of Ubuntu shortcuts",
+	"description": "CLI to create desktop shortcuts in Ubuntu",
 	"main": "src/index.js",
 	"bin": "src/index.js",
 	"type": "module",
