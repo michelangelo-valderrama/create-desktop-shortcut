@@ -43,6 +43,11 @@ program
 			process.exit(1)
 		}
 
+		if (!options.name) {
+			Logger.error(`The name '${options.name}' does not exist`)
+			process.exit(1)
+		}
+
 		const iconPath = options.icon
 		if (iconPath) {
 			const iconExists = fs.existsSync(iconPath)
@@ -72,10 +77,11 @@ program
 			.match(/[^.]+/)[0]
 
 		const execAbsolutePath = path.resolve(pathString)
+		const iconAbsolutePath = path.resolver(iconPath)
 
 		const desktopFile = `[Desktop Entry]
 Name=${options.name}
-Exec=${execAbsolutePath} %u${iconPath ? `\nIcon=${iconPath}` : ''}
+Exec=${execAbsolutePath} %u${iconAbsolutePath ? `\nIcon=${iconAbsolutePath}` : ''}
 Comment=${options.comment}
 Type=Application
 StartupNotify=${options.startupNotify}
